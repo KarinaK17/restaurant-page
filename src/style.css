@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+#content {
+  flex: 1 0 auto;
+  background-color: beige;
+  font-family: "Noto Serif", serif;
+}
+
+footer {
+  flex-shrink: 0;
+  background-color: rgb(242, 194, 252);
+  padding: 8px;
+  font-size: 0.9rem;
+  text-align: center;
+  font-family: "Noto Serif", serif;
+  border-top: 2px solid rgb(79, 30, 88);
+}
+
+.header-container {
+  background-color: rgb(222, 255, 168);
+  /* background-color: rgb(128, 118, 105); */
+  text-align: center;
+  border-bottom: 2px black solid;
+  font-family: "Courgette", cursive;
+  padding: 1rem;
+}
+
+.header {
+  font-size: clamp(30px, 3.3rem, 4vw);
+}
+
+.tab-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.tab {
+  border: 2px black solid;
+  border-top: none;
+  font-size: clamp(15px, 1.4rem, 1.6vw);
+  border-radius: 0 0 10px 10px;
+  padding: 0.3% 5%;
+  background-color: rgb(242, 194, 252);
+  font-weight: bold;
+}
+
+.tab-content {
+  padding: 2rem 10%;
+}
+
+/* home design */
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.photo {
+  width: min(800px, 90%);
+  height: auto;
+  border-radius: 10px;
+}
+
+.description-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  font-size: clamp(15px, 1.1rem, 1.1vw);
+}
+
+/* menu design */
+
+.menu-container {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.menu-item {
+  display: flex;
+  justify-content: space-between;
+  border: 2px black solid;
+  padding: 15px;
+  flex-grow: 1;
+  gap: 2rem;
+  border-radius: 10px;
+  background-color: rgb(68 65 74);
+  color: white;
+}
+
+.menu-item img {
+  width: min(300px, 30%);
+  height: auto;
+  border-radius: 10px;
+  border: 2px white solid;
+  align-self: center;
+}
+
+.menu-item div {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* contacts design */
+
+.contacts-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.map {
+  width: min(600px, 90%);
+  height: auto;
+  margin: 10px 0 20px;
+  border-radius: 10px;
+  border: 3px rgb(157 192 249) solid;
+}
