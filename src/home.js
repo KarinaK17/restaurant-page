@@ -1,6 +1,4 @@
 function homeStructure() {
-  console.log("home function");
-
   const tabContent = document.querySelector(".tab-content");
   tabContent.innerHTML = "";
 

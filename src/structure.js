@@ -1,5 +1,4 @@
 function makeStructure() {
-  console.log("sdgdsgf");
   const content = document.getElementById("content");
 
   const headerContainer = document.createElement("div");
